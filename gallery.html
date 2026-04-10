@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habib's Awards Gallery</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+<div class="drift-star"></div>
+    <div class="drift-star"></div>
+    <div class="drift-star"></div>
+    <div class="drift-star"></div>
+    <div class="drift-star"></div>
+    <div class="drift-star"></div>
+    <div class="drift-star"></div>
+    <div class="drift-star"></div>
+    <div class="drift-star"></div>
+    <div class="drift-star"></div>
+        <div class="petal">🌸</div>
+        <div class="petal">🌸</div>
+        <div class="petal">🌸</div>
+        <div class="petal">🌸</div>
+        <div class="petal">🌸</div>
+    </div>
+
+    <nav>
+        <div class="logo">PORTFOLIO</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery-section">
+        <h1 class="main-title">AWARDS & ACHIEVEMENTS</h1>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="award1.jpg" alt="Award 1">
+                <div class="award-description">
+                    <h3>The Skill Builder</h3>
+                    <p>The Skill Builder: "Successfully met all requirements for this specialized program, demonstrating a strong grasp of the core concepts and practical applications.</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="award2.jpg" alt="Award 2">
+                <div class="award-description">
+                    <h3>The Dedicated Learner</h3>
+                    <p> "Awarded for the consistent effort and discipline required to complete this comprehensive course of study from start to finish."</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="award3.jpg" alt="Award 3">
+                <div class="award-description">
+                    <h3>The Knowledge Seeker:</h3>
+                    <p> "Recognized for expanding my technical toolkit and successfully mastering new methodologies through structured learning and testing."</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="award4.jpg" alt="Award 4">
+                <div class="award-description">
+                    <h3>The Modern Professional</h3>
+                    <p>: "Verified completion of this industry-relevant course, marking a significant step forward in my journey as a lifelong learner and developer."</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="award5.jpg" alt="Award 5">
+                <div class="award-description">
+                    <h3>The High Achiever: </h3>
+                    <p>"Earned by completing all advanced modules and showing a high level of competence in the final assessments of the curriculum."</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="award6.jpg" alt="Award 6">
+                <div class="award-description">
+                    <h3>The 'Pirate King' Ambition</h3>
+                    <p> "Reflecting my drive to never stop growing, this certificate confirms the successful mastery of a new set of challenging skills."</p>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Habib Mohammed | Built with Passion</p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>
